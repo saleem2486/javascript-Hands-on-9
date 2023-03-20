@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: red;
+        }
+        pre{
+            color: blue;
+            font-size: 25px;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Q1. Get all th students name in Caps</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+let ans=[];
+for(i=0; < studentRecords.length;i++){
+  ans.push(studentRecords[i].name.toUpperCase())
+}
+console.log(ans)</pre>
+
+    <h1>Q2. Get the details of students who scored more than 50 marks.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=[]
+for(i=0;i< studentRecords.length;i++){
+   if(studentRecords[i].marks>50){
+    ans.push(studentRecords[i])
+   }    
+}
+console.log(ans)</pre>
+
+    <h1>Q3. Get the details of students who scored more than 50 marks and have their ID's greater than 120.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=[]
+for(i=0;i< studentRecords.length;i++){
+   if(studentRecords[i].marks>50 && studentRecords[i].id>100){
+    ans.push(studentRecords[i])
+   }    
+}
+console.log(ans)</pre>
+
+    <h1>Q4. Get the sum of marks of all the students.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=0
+for(i=0;i< studentRecords.length;i++){
+   ans+=studentRecords[i].marks  
+}
+console.log(ans)</pre>
+
+    <h1>Q5. Get only the names of students who have scored more than 50.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=[]
+for(i=0;i< studentRecords.length;i++){
+   if(studentRecords[i].marks>50){
+    ans.push(studentRecords[i].name)
+   }    
+}
+console.log(ans)
+</pre>
+
+    <h1>Q6. Print the sum of marks of the student with id greater than 120.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=0
+for(i=0;i< studentRecords.length;i++){
+   if(studentRecords[i].id>120){
+    ans+=studentRecords[i].marks
+   }    
+}
+console.log(ans)</pre>
+
+    <h1>Q7. Print the total marks of students with marks greater than 50 after grace of 15 marks that has been added to those students who scored less than 50.</h1>
+    <pre>
+let studentRecords=[{name:'John',id:123,marks:98},
+{name:'Baba',id:101,marks:23},
+{name:'Yaga',id:200,marks:45},
+{name:'Wick',id:115,marks:75}]
+
+ans=[]
+for(i=0;i< studentRecords.length;i++){
+   if(studentRecords[i].marks< 50){
+    studentRecords[i].marks=studentRecords[i].marks+15
+   }
+   
+}
+for(i=0;i< studentRecords.length;i++){
+  if(studentRecords[i].marks>50){
+    ans.push(studentRecords[i])
+   }
+}
+
+console.log(ans)</pre>
+
+    <h1>Q8. Create 6 objects, each object will have name, class, roll no as properties. Store this objects in an array of objects</h1>
+    <pre>
+        let NewAOO=[{name:'Harry',class:'Java',rollno:111},
+                    {name:'Potter',class:'Python',rollno:112},
+                    {name:'Ron',class:'Sql',rollno:113},
+                    {name:'Wisely',class:'Javscript',rollno:114},
+                    {name:'Herminey',class:'Selenium',rollno:115},
+                    {name:'Grenger',class:'Machine learning',rollno:116}]
+        console.log(NewAOO)
+    </pre>
+</body>
+</html>
